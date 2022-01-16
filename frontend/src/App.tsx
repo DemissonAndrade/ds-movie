@@ -1,3 +1,4 @@
+import Footer from "components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Form from "./pages/Form";
@@ -7,14 +8,16 @@ import Listing from "./pages/Listing";
 function App() {
   return (
     <BrowserRouter>
-      <NavBar/>
+      <NavBar />
       <Routes>
         <Route path="/" element={<Listing />} />
         <Route path="/form">
           <Route path=":movieId" element={<Form />} />
         </Route>
       </Routes>
+      <Footer />
     </BrowserRouter>
+
   );
 }
 

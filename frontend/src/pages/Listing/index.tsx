@@ -43,7 +43,7 @@ function Listing() {
             <div className="container">
                 <div className="row">
                     {page.content.map(movie => (
-                        <div key={movie.id} className=" col-sm-3 col-xl-4 mb-3">
+                        <div key={movie.id} className=" col-sm-3 mb-3">
                             <MovieCard movie={movie} />
                         </div>
                     )
